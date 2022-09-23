@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link, useHistory, useParams } from 'react-router-dom';
-import { useSelector, useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
+// import { useDispatch } from 'react-redux';
 
 const Header = () => {
-    const dispatch = useDispatch();
+    // const dispatch = useDispatch();
 
     //   const history = useHistory();
     //   const userLogin = useSelector(state => state.userLogin);
