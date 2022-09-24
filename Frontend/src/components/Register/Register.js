@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import { faCheck, faTimes, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import React, { Component } from 'react';
-import API from "../../API";
+import API from "../../api/API";
 
 const REGISTER_URL = '/user/register';
 const USER_REGEX = /^[A-z][A-z0-9-_]{3,23}$/;
@@ -22,8 +22,8 @@ const Register = () => {
 
 
     const [permission, setPermission] = useState('');
-    const [validPer, setPer] = useState(false);
-    const [perFocus, setPerFocus] = useState(false);
+    // const [validPer, setPer] = useState(false);
+    // const [perFocus, setPerFocus] = useState(false);
 
     const [password, setPwd] = useState('');
     const [validPwd, setValidPwd] = useState(false);
@@ -234,7 +234,7 @@ const Register = () => {
                         Already registered?<br />
                         <span className="line">
                             {/*put router link here*/}
-                            <a href="#">Sign In</a>
+                            <a href="/login">Log In</a>
                         </span>
                     </p>
                 </section>

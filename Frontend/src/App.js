@@ -4,6 +4,8 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header/Header';
 import Register from './components/Register/Register';
+import Login from './components/Login/Login';
+import { AuthProvider } from './context/AuthProvider';
 // import { Row, Container } from "reactstrap";
 import { Routes } from "react-router-dom";
 
@@ -36,6 +38,7 @@ const App = () => {
           {/* <Route index element={<Home />} /> */}
           {/* <Route path="/" element={<Home />} /> */}
           <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
           {/* </Route> */}
         </Routes>
       </BrowserRouter>
